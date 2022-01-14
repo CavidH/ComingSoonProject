@@ -9,7 +9,6 @@
     <Compile Remove="Migrations\20220114145816_db.Designer.cs" />
     <Compile Remove="Migrations\20220114153429_DB.cs" />
     <Compile Remove="Migrations\20220114153429_DB.Designer.cs" />
-    <Compile Remove="wwwroot\Admin\assets\libs\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,18 +23,6 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Remove="wwwroot\Admin\assets\libs\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="wwwroot\Admin\assets\libs\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Remove="wwwroot\Admin\assets\libs\**" />
   </ItemGroup>
 
   <ItemGroup>
