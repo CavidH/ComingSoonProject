@@ -11,6 +11,6 @@ namespace ComingSoonProject.DAL
         }
 
 
-        public DbSet<Setting> Settings { get; set; }
+        public DbSet<SettingDeadLine> Settings { get; set; }
     }
 }

@@ -1,7 +1,5 @@
-﻿@model List<ComingSoonProject.Models.Setting>
-@{
-    int count = 1;
-}
+﻿@model SettingDeadLine
+ 
 <!-- ============================================================== -->
 <!-- Start Page Content here -->
 <!-- ============================================================== -->
@@ -24,7 +22,7 @@
 
                                 <thead>
                                 <tr>
-                                    <th>№</th>
+                                 
                                     <th>Key</th>
                                     <th>Value</th>
                                     <th>Edit</th>
@@ -32,23 +30,22 @@
                                 </thead>
 
                                 <tbody>
-                                @foreach (var setting in Model)
-                                {
+                  
+                            
                                     <tr>
-                                        <td>@count</td>
-                                        <td>@setting.key.ToUpper()</td>
-                                        <td>@setting.Value.ToUpper()</td>
+                                 
+                                        <td>Deadline</td>
+                                        <td>@Model.DeadLine</td>
                                         <td>
-                                            <a class="btn btn-icon waves-effect waves-light btn-purple" asp-action="Update" asp-route-id="@setting.Id">
+                                            <a class="btn btn-icon waves-effect waves-light btn-purple" asp-action="Update" asp-route-id="@Model.Id">
                                                 <i class="mdi mdi-pencil-outline"></i>
                                             </a>
                                         </td>
 
                                     </tr>
 
-
-                                    count++;
-                                }
+ 
+                       
                                 </tbody>
                             </table>
                         </div>

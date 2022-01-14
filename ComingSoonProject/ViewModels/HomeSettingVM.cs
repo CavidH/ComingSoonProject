@@ -1,9 +1,10 @@
-﻿using ComingSoonProject.Models;
+﻿using System;
+using ComingSoonProject.Models;
 
 namespace ComingSoonProject.ViewModels
 {
     public class HomeSettingVM
     {
-        public string Deadline { get; set; }
+        public DateTime  Deadline{ get; set; }
     }
 }
