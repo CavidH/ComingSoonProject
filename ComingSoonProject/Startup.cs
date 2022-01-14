@@ -26,7 +26,7 @@ namespace ComingSoonProject
         public IConfiguration Configuration { get; }    
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddScoped<HomeController>();
             services.AddDbContext<AppDbContext>(options =>
             {
