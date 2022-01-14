@@ -2,7 +2,7 @@
 
 namespace ComingSoonProject.Migrations
 {
-    public partial class Settingdb : Migration
+    public partial class db : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,8 +12,9 @@ namespace ComingSoonProject.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    key = table.Column<string>(nullable: true),
-                    Value = table.Column<string>(nullable: true)
+                    Key = table.Column<string>(nullable: true),
+                    Value = table.Column<string>(nullable: true),
+                    DataType = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

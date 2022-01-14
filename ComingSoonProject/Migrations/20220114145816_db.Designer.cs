@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ComingSoonProject.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20220114124250_Settingdb")]
-    partial class Settingdb
+    [Migration("20220114145816_db")]
+    partial class db
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -27,10 +27,13 @@ namespace ComingSoonProject.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Value")
+                    b.Property<string>("DataType")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("key")
+                    b.Property<string>("Key")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Value")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

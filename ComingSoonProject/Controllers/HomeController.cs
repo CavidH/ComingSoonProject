@@ -18,7 +18,7 @@ namespace ComingSoonProject.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var DeadLine = await _context.Settings.Where(p => p.key == "deadline").FirstOrDefaultAsync();
+            var DeadLine = await _context.Settings.Where(p => p.Key == "deadline").FirstOrDefaultAsync();
             var HomeVM = new HomeSettingVM()
             {
                 Deadline = DeadLine.Value

@@ -25,10 +25,13 @@ namespace ComingSoonProject.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Value")
+                    b.Property<string>("DataType")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("key")
+                    b.Property<string>("Key")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Value")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
