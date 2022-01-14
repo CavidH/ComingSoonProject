@@ -129,6 +129,15 @@
     <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\toastr\toastr.min.js" />
     <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\x-editable\bootstrap-editable.css" />
     <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\x-editable\bootstrap-editable.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\images\album\sm-img-1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\images\album\sm-img-2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\images\gallery\1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\images\gallery\11.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\images\gallery\12.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\images\gallery\2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\images\gallery\3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\images\gallery\4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\images\gallery\9.jpg" />
   </ItemGroup>
 
 </Project>
