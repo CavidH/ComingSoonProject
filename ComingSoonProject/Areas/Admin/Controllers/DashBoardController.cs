@@ -4,7 +4,7 @@ namespace ComingSoonProject.Areas.Admin.Controllers
 {
     public class DashBoardController : Controller
     {
-        // GET
+        [Area("Admin")]
         public IActionResult Index()
         {
             return View();
