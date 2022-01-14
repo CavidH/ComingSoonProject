@@ -9,6 +9,7 @@
     <Compile Remove="Migrations\20220114145816_db.Designer.cs" />
     <Compile Remove="Migrations\20220114153429_DB.cs" />
     <Compile Remove="Migrations\20220114153429_DB.Designer.cs" />
+    <Compile Remove="wwwroot\Admin\assets\libs\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,6 +24,124 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="wwwroot\Admin\assets\libs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="wwwroot\Admin\assets\libs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\Admin\assets\libs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\bootstrap-colorpicker\bootstrap-colorpicker.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\bootstrap-colorpicker\bootstrap-colorpicker.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\bootstrap-datepicker\bootstrap-datepicker.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\bootstrap-datepicker\bootstrap-datepicker.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\bootstrap-tagsinput\bootstrap-tagsinput.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\bootstrap-tagsinput\bootstrap-tagsinput.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\bootstrap-timepicker\bootstrap-timepicker.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\bootstrap-timepicker\bootstrap-timepicker.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\bootstrap-touchspin\jquery.bootstrap-touchspin.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\bootstrap-touchspin\jquery.bootstrap-touchspin.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\c3\c3.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\c3\c3.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\chart-js\Chart.bundle.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\cropper\cropper.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\cropper\cropper.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\custombox\custombox.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\custombox\custombox.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\d3\d3.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\datatables\buttons.bootstrap4.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\datatables\buttons.bootstrap4.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\datatables\buttons.html5.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\datatables\buttons.print.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\datatables\dataTables.bootstrap4.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\datatables\dataTables.bootstrap4.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\datatables\dataTables.buttons.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\datatables\dataTables.keyTable.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\datatables\dataTables.responsive.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\datatables\dataTables.select.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\datatables\jquery.dataTables.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\datatables\responsive.bootstrap4.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\datatables\responsive.bootstrap4.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\datatables\select.bootstrap4.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\dropzone\dropzone.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\dropzone\dropzone.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\easy-pie-chart\jquery.easypiechart.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\flot-charts\jquery.flot.crosshair.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\flot-charts\jquery.flot.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\flot-charts\jquery.flot.pie.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\flot-charts\jquery.flot.resize.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\flot-charts\jquery.flot.selection.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\flot-charts\jquery.flot.stack.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\flot-charts\jquery.flot.time.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\flot-charts\jquery.flot.tooltip.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\fullcalendar\fullcalendar.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\fullcalendar\fullcalendar.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\gmaps\gmaps.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\img\clear.html" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\img\loading.html" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\ion-rangeslider\ion.rangeSlider.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\ion-rangeslider\ion.rangeSlider.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\jquery-knob\jquery.knob.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\jquery-mask-plugin\jquery.mask.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\jquery-scrollto\jquery.scrollTo.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\jquery-sparkline\jquery.sparkline.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\jquery-steps\jquery.steps.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\jquery-tabledit\jquery.tabledit.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\jquery-ui\jquery-ui.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\jquery-vectormap\jquery-jvectormap-1.2.2.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\jquery-vectormap\jquery-jvectormap-1.2.2.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\jquery-vectormap\jquery-jvectormap-au-mill-en.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\jquery-vectormap\jquery-jvectormap-ca-lcc-en.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\jquery-vectormap\jquery-jvectormap-in-mill-en.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\jquery-vectormap\jquery-jvectormap-uk-mill-en.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\jquery-vectormap\jquery-jvectormap-us-il-chicago-mill-en.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\jquery-vectormap\jquery-jvectormap-us-merc-en.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\jquery-vectormap\jquery-jvectormap-world-mill-en.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\jszip\jszip.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\katex\katex.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\moment\moment.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\morris-js\morris.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\nestable2\jquery.nestable.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\nestable2\jquery.nestable.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\owl-carousel\owl.carousel.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\owl-carousel\owl.carousel.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\owl-carousel\owl.video.play.html" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\parsleyjs\parsley.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\pdfmake\pdfmake.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\pdfmake\vfs_fonts.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\peity\jquery.peity.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\quill\quill.bubble.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\quill\quill.core.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\quill\quill.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\quill\quill.snow.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\raphael\raphael.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\rickshaw\rickshaw.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\rickshaw\rickshaw.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\rwd-table\rwd-table.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\rwd-table\rwd-table.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\select2\select2.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\select2\select2.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\summernote\font\summernote64fe-2.html" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\summernote\font\summernote64fe-3.html" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\summernote\font\summernote64fe.html" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\summernote\summernote-bs4.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\summernote\summernote-bs4.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\sweetalert2\sweetalert2.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\sweetalert2\sweetalert2.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\switchery\switchery.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\switchery\switchery.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\toastr\toastr.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\toastr\toastr.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\x-editable\bootstrap-editable.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\Admin\assets\libs\x-editable\bootstrap-editable.min.js" />
   </ItemGroup>
 
 </Project>
