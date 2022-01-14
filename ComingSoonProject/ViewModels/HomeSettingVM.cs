@@ -5,6 +5,6 @@ namespace ComingSoonProject.ViewModels
 {
     public class HomeSettingVM
     {
-        public DateTime  Deadline{ get; set; }
+        public DateTime DeadLine { get; set; }
     }
 }
