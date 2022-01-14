@@ -19,7 +19,7 @@ namespace ComingSoonProject.Areas.Admin.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var deadLine = await _context.Settings.FindAsync();
+            var deadLine = await _context.Settings.FirstAsync();
             return View(deadLine);
         }
 
@@ -43,7 +43,7 @@ namespace ComingSoonProject.Areas.Admin.Controllers
             setting.DeadLine = settingDeadLineV.DeadLine;
              await _context.SaveChangesAsync();
 
-            return View();
+             return RedirectToAction("Index", "DeadLine");
         }
     }
 }
