@@ -8,6 +8,8 @@ namespace ComingSoonProject.Areas.Admin.Controllers
         public IActionResult Index()
         {
             return View();
+            
+            //  site title yaz!
         }
     }
 }
