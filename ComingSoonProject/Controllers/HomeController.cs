@@ -23,14 +23,6 @@ namespace ComingSoonProject.Controllers
             {
                 Deadline = DeadLine.Value
             };
-            //var c = DateAndTime.Now;
-            //var resulttime= c.ToString("dd MMM , yyyy");
-            //var dsss=c.TimeOfDay;
-            //var dc = DateTime.Now;
-            //var dsc = DateTime.UtcNow;
-
-            //ViewBag.time = resulttime;
-
             return View(HomeVM);
         }
     }

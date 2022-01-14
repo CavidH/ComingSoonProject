@@ -26,7 +26,7 @@ namespace ComingSoonProject
         public IConfiguration Configuration { get; }    
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddScoped<HomeController>();
             services.AddDbContext<AppDbContext>(options =>
             {
@@ -49,7 +49,7 @@ namespace ComingSoonProject
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}");
+                    pattern: "{area:exists}/{controller=DashBoard}/{action=Index}/{id?}");
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
