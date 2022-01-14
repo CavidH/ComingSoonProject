@@ -1,4 +1,10 @@
-let comingDate = new Date('Feb 29, 2022 ')
+ 
+// let comingDate = 'Feb 29, 2022 ')
+let Deadline = document.querySelector("#timer").getAttribute('data-deadline')
+// console.log(Deadline)
+let comingDate = new Date(Deadline)
+
+
 
 let d = document.getElementById('days')
 let h = document.getElementById('hours')
