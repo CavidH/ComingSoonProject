@@ -1,4 +1,4 @@
-﻿@model HomeSettingVM;
+﻿@model ComingSoonProject.VievModel.HomeVM;
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,10 +14,10 @@
 <body id="bd">
     <header id="header">
         <div class="container header-con flex-column">
-            <h1>ComingSoon</h1>
-            <p>We're working hard to improve our website and we'll ready to launch after</p>
+            <h1 >@Model.HeadTxt</h1>
+            <p>@Model.HeadContent</p>
         </div>
-        <div id="timer" class=" Timecounter d-flex justify-content-center flex-row " data-deadline="@Model.DeadLine">
+        <div id="timer" class=" Timecounter d-flex justify-content-center flex-row " data-deadline="@Model.Deadline">
             <div>
                 <h3 id="days"></h3>
                 <h4>Days</h4>

@@ -1,9 +1,8 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ComingSoonProject.Migrations
 {
-    public partial class DeadLineDb : Migration
+    public partial class frtdb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,7 +12,9 @@ namespace ComingSoonProject.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    DeadLine = table.Column<DateTime>(nullable: false)
+                    Key = table.Column<string>(nullable: true),
+                    Value = table.Column<string>(nullable: true),
+                    DataType = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

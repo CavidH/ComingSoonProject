@@ -1,4 +1,4 @@
-﻿@model SettingDeadLine
+﻿@model Setting
 <div class="content-page">
     <div class="content">
 
@@ -24,8 +24,8 @@
 
                             <form class="parsley-examples" method="post">
                                 <div class="form-group">
-                                    <label asp-for="DeadLine">Value<span class="text-danger">*</span></label>
-                                    <input asp-for="DeadLine"  parsley-trigger="change" required placeholder="Enter Title" class="form-control">
+                                    <label asp-for="Value">Value<span class="text-danger">*</span></label>
+                                    <input asp-for="Value"  type="@Model.DataType" parsley-trigger="change" required placeholder="Enter Title" class="form-control">
                                 </div>
 
 

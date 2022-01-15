@@ -19,7 +19,7 @@ namespace ComingSoonProject.Areas.Admin.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var deadLine = await _context.Settings.FirstAsync();
+            var deadLine = await _context.Settings.ToListAsync();
             return View(deadLine);
         }
 
@@ -35,15 +35,15 @@ namespace ComingSoonProject.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Update(int? Id, SettingDeadLine settingDeadLineV)
+        public async Task<IActionResult> Update(int? Id, Setting settingv)
         {
             if (Id == null) return NotFound();
             var setting = await _context.Settings.FindAsync(Id);
             if (setting == null) return NotFound();
-            setting.DeadLine = settingDeadLineV.DeadLine;
-             await _context.SaveChangesAsync();
+            setting.Value = settingv.Value.ToString();
+            await _context.SaveChangesAsync();
 
-             return RedirectToAction("Index", "DeadLine");
+            return RedirectToAction("Index", "DeadLine");
         }
     }
 }

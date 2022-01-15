@@ -1,5 +1,5 @@
-﻿@model SettingDeadLine
- 
+﻿@model List<Setting>
+
 <!-- ============================================================== -->
 <!-- Start Page Content here -->
 <!-- ============================================================== -->
@@ -22,7 +22,7 @@
 
                                 <thead>
                                 <tr>
-                                 
+
                                     <th>Key</th>
                                     <th>Value</th>
                                     <th>Edit</th>
@@ -30,22 +30,27 @@
                                 </thead>
 
                                 <tbody>
-                  
-                            
+
+
+
+                                @foreach (var setting in Model)
+                                {
                                     <tr>
-                                 
-                                        <td>Deadline</td>
-                                        <td>@Model.DeadLine</td>
+
+                                        <td>@setting.Key</td>
+                                        <td>@setting.Value</td>
                                         <td>
-                                            <a class="btn btn-icon waves-effect waves-light btn-purple" asp-action="Update" asp-route-id="@Model.Id">
+                                            <a class="btn btn-icon waves-effect waves-light btn-purple" asp-action="Update" asp-route-id="@setting.Id">
                                                 <i class="mdi mdi-pencil-outline"></i>
                                             </a>
                                         </td>
-
                                     </tr>
+                                }
 
- 
-                       
+
+
+
+
                                 </tbody>
                             </table>
                         </div>

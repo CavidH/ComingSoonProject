@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 using ComingSoonProject.DAL;
-using ComingSoonProject.ViewModels;
+using ComingSoonProject.VievModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualBasic;
@@ -18,10 +18,14 @@ namespace ComingSoonProject.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var deadLine = await _context.Settings.FirstAsync();
-            var HomwVM = new HomeSettingVM()
+            var deadline = await _context.Settings.Where(p=>p.Key=="deadline").FirstAsync();
+            var headtxt = await _context.Settings.Where(p=>p.Key=="headtxt").FirstAsync();
+            var headcontent = await _context.Settings.Where(p=>p.Key=="headcontent").FirstAsync();
+            var HomwVM = new HomeVM()
             {
-                DeadLine = deadLine.DeadLine
+                Deadline = deadline.Value,
+                HeadTxt = headtxt.Value,
+                HeadContent = headcontent.Value
             };
             return View(HomwVM);
         }
