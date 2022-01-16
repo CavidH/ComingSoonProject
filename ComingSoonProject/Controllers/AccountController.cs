@@ -9,9 +9,12 @@ namespace ComingSoonProject.Controllers
     public class AccountController : Controller
     {
         private UserManager<ApplicationUser> _userManager { get; }
-        public AccountController(UserManager<ApplicationUser> userManager)
+        private SignInManager<ApplicationUser> _signManager { get; }
+
+        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signManager)
         {
             _userManager = userManager;
+            _signManager = signManager;
         }
 
         public IActionResult Index()
@@ -39,7 +42,7 @@ namespace ComingSoonProject.Controllers
                 var result = await _userManager.CreateAsync(user, registerVM.Password);
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index");
+                    return RedirectToAction("Login");
                 }
                 else
                 {
@@ -51,6 +54,12 @@ namespace ComingSoonProject.Controllers
             } 
             return View(registerVM);
         }
-        public async Task<IActionResult> Login(UserLoginVm loginVm) { }
+        public IActionResult Login() {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> Login(UserLoginVm loginVm) {
+        return View(loginVm);
+        }
     }
 }
