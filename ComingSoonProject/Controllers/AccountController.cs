@@ -77,5 +77,10 @@ namespace ComingSoonProject.Controllers
 
             return View(loginVm);
         }
+        public async Task<IActionResult> Logout()
+        {
+           await _signManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
+        }
     }
 }
