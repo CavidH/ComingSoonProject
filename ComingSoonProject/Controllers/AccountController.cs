@@ -46,20 +46,36 @@ namespace ComingSoonProject.Controllers
                 }
                 else
                 {
-                    foreach(var error in result.Errors)
+                    foreach (var error in result.Errors)
                     {
                         ModelState.AddModelError(string.Empty, error.Description);
                     }
                 }
-            } 
+            }
             return View(registerVM);
         }
-        public IActionResult Login() {
+        public IActionResult Login()
+        {
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Login(UserLoginVm loginVm) {
-        return View(loginVm);
+        public async Task<IActionResult> Login(UserLoginVm loginVm)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.FindByEmailAsync(loginVm.Email);
+                if (user == null) return NotFound();
+
+                var login = await _signManager.PasswordSignInAsync(user, loginVm.Password, loginVm.RememberMe, true);
+                if (login.Succeeded)
+                {
+                    await _signManager.SignInAsync(user, loginVm.RememberMe);
+
+                }
+                return RedirectToAction("Index", "Home");
+            }
+
+            return View(loginVm);
         }
     }
 }

@@ -12,9 +12,22 @@
 </head>
 
 <body id="bd">
+    <div>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <h4>@User.Identity.Name</h4>
+            <a asp-controller="Account" asp-action="Logout">LogOut</a>
+
+        }
+        else
+        {
+            <a asp-controller="Account" asp-action="Login">Login</a>
+
+        }
+    </div>
     <header id="header">
         <div class="container header-con flex-column">
-            <h1 >@Model.HeadTxt</h1>
+            <h1>@Model.HeadTxt</h1>
             <p>@Model.HeadContent</p>
         </div>
         <div id="timer" class=" Timecounter d-flex justify-content-center flex-row " data-deadline="@Model.Deadline">
